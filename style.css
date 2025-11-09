@@ -1,0 +1,114 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFBDBD;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #FFA4A4;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+nav a {
+  color: #000;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+nav a:hover {
+  transform: scale(1.2);
+}
+
+/* Sections */
+.section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+#about {
+  background-color: #FFBDBD;
+}
+
+#gallery {
+  background-color: #FCF9EA;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 2rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+#contact p {
+  display: inline-flex;
+  align-items: center;
+}
+
+.label {
+  margin-right: 8px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+#contact a {
+  color: #BADFDB;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+#contact a:hover {
+  transform: scale(1.2);
+}
+
+#contact p:hover .label {
+  transform: translateX(-5px)
+}
+
+/* Footer */
+footer {
+  background: #FFA4A4;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #000;
+}
